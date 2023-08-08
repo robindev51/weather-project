@@ -1,0 +1,143 @@
+/* styles.css */
+body {
+    text-align: center;
+    color: white; /* Changed text color to white */
+    background-size: cover;
+     background-image: url("https://wallpaperaccess.com/full/5466409.jpg"); 
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .weather-alert {
+    background-color: transparent; 
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  .date-time {
+    color: white;
+    position: absolute;
+    font-size: 16px;
+    margin-top: 10px; /* Added margin to separate date and time */
+  }
+  
+  .search-bar {
+    position: absolute;
+    top: 10px; /* Positioned at the top right corner */
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-bar input {
+    border: 1px solid black;
+    width: 60%; /* Doubled the width of the search bar */
+    padding: 8px; /* Increased padding for better appearance */
+    height: 28px;
+  }
+  
+  .search-bar button {
+    background-color: transparent;
+    font-size: 15px;
+    border: 1px solid black;
+    width: 70px;
+    height: 25px;
+    padding-bottom: 3px;
+    color: antiquewhite;
+    cursor: pointer;
+    margin-left: 3px;
+  }
+  
+  .search-bar button:hover {
+    background-color: rgb(213, 231, 237);
+    color: black;
+  }
+  
+  h5 {
+    font-size: 30px;
+    color: rgb(213, 231, 237);
+    padding-top: 50px;
+  }
+  
+  h2 {
+    color: rgb(255, 255, 255);
+    padding-top: 30px;
+    font-size: 30px; 
+  
+  }
+
+  h1 {
+    color: #d0d3e0;
+    padding-top: 30px;
+    text-align: center;
+  }
+  
+  p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .icon {
+    font-size: 100px;
+  }
+  
+  
+  .weather-info {
+    font-size: 24px; /* Increased font size */
+  } 
+  
+  table {
+    border: 2px solid #131313;
+    margin: 20px auto; /* Added margin for better spacing */
+    width: 60%; /* Increased width of the table */
+    text-align: center;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    border: 1px solid black;
+  }
+  
+  th {
+    background-color: #0e0e0e;
+    color: #e2dada;
+  }
+  
+  img {
+    background-blend-mode: lighten;
+  }
+  
+
+.additional-data-table {
+    border: 2px solid #131313;
+    margin: 20px auto;
+    width: 30%;
+    text-align: center;
+  }
+  
+  .additional-data-table th,
+  .additional-data-table td {
+    padding: 10px;
+    border: 1px solid black;
+  }
+  
+  .additional-data-table th {
+    background-color: #0e0e0e;
+    color: #e2dada;
+  }
+  .top-left{
+    position: relative;
+    right: 650px;
+}

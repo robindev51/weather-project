@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Weather App - Result</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<h1>How's The Weather</h1>
+
+<div class="${req.query.class}">
+  <h2>The temperature in ${req.query.city} is ${req.query.temp} degree Celsius.</h2>
+  <p>The weather is currently ${req.query.description} in ${req.query.city}.</p>
+  <img src="${req.query.imageURL}">
+  <h3>5-Day Forecast:</h3>
+  <table class="table">
+    <tr><th>Date</th><th>Temperature</th><th>Description</th></tr>
+    <!-- Parse and render forecast data -->
+    ${JSON.parse(req.query.forecast).map(forecast => `
+      <tr>
+        <td>${new Date(forecast.dt * 1000).toLocaleDateString()}</td>
+        <td>${forecast.main.temp} °C</td>
+        <td>${forecast.weather[0].description}</td>
+      </tr>
+    `).join('')}
+  </table>
+</div>
+
+</body>
+</html>
